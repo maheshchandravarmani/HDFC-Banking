@@ -30,5 +30,15 @@ public class EconomicalNumber {
         for (int i = 1; i <= maxVal / 2; i++) {  
             if (mark[i] == false) {  
                 primeValues.add(2 * i + 1);  
-            }  
+            } 
+code changes for release by Developer Mahesh
+// find the total number of digits in the original number.  
+        int realNumber = number;  
+        int count = 0;  
+        while (realNumber > 0) {  
+            // increment the value of count  
+            count++;  
+              
+            // remove last digit from the number  
+            realNumber = realNumber / 10;   
         }  
