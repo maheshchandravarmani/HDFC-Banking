@@ -1,0 +1,11 @@
+ public boolean search(String ac_no) {  
+        if (accno.equals(ac_no)) {  
+            showAccount();  
+            return (true);  
+        }  
+        return (false);  
+    }  
+}  
+public class BankingApp {  
+    public static void main(String arg[]) {  
+        Scanner sc = new Scanner(System.in);  

@@ -1,0 +1,17 @@
+public static String convertToDec(String value, int base, Map<Character, Integer>hexatoDec)  
+    {  
+        int sum = 0;  
+        int pow = 0;  
+        String tempData = value;  
+          
+        //logic to find equivalent decimal number  
+        for (int i = tempData.length() - 1; i >= 0; i--) {  
+            int val = tempData.charAt(i) - '0';  
+            if (base == 16 && hexatoDec.containsKey(tempData.charAt(i))) {  
+                val = hexatoDec.get(tempData.charAt(i));  
+            }  
+            sum += (val) * (Math.pow(base, pow++));  
+        }  
+        return String.valueOf(sum);  
+    }  
+      
