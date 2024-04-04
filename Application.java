@@ -40,5 +40,13 @@ code changes for release by Developer Mahesh
             count++;  
               
             // remove last digit from the number  
-            realNumber = realNumber / 10;   
+            public static void main(String[] args)  
+    {  
+        int start, end;  
+        // find all the prime numbers   
+        calculatePrimeValues();  
+          
+        //create a scanner class object.  
+        Scanner sc= new Scanner(System.in); 
+realNumber = realNumber / 10;   
         }  
