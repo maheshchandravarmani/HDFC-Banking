@@ -1,1 +1,2 @@
 Working on git bash
+When the developer commits any new code to the git hub repository, Jenkins will get triggered. This is called the webhook job
